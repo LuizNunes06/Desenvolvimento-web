@@ -1,14 +1,15 @@
-
 .caixa{
     height: 400px;
-    width: 30%;
+    width: 25%;
     background-color: black;
     text-align: center;
     color: white;
-    margin: 300px auto;
+    margin: 200px auto ;
+    box-shadow: rgb(85, 85, 85) 5px 5px 20px;
+    border-radius: 15px;
 }
 #valorA{
-    margin-top: 20px;
+    margin-top: 130px;
 }
 input, button{
     margin-bottom: 5px;
