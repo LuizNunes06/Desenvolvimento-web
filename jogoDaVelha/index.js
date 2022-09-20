@@ -1,5 +1,9 @@
 let jogador = "X"
 
+let placarX = 0
+let placarO = 0
+let jogadaAtual = 0
+
 const casa1 = document.getElementById("casa1")
 const casa2 = document.getElementById("casa2")
 const casa3 = document.getElementById("casa3")
@@ -16,6 +20,7 @@ function jogada(casa) {
         casa.innerHTML = jogador;
         alterna_jogador();
         verifica_ganhador();
+        jogadaAtual ++
     }
 }
 
@@ -36,7 +41,12 @@ function verifica_ganhador() {
         casa3.innerHTML != "" && casa3.innerHTML === casa5.innerHTML && casa3.innerHTML === casa7.innerHTML ||
         casa4.innerHTML != "" && casa4.innerHTML === casa5.innerHTML && casa4.innerHTML === casa6.innerHTML ||
         casa6.innerHTML != "" && casa6.innerHTML === casa7.innerHTML && casa6.innerHTML === casa9.innerHTML) {
-        alert(`Vencedor ${casa1.innerHTML}`)
-
+        if (jogadaAtual % 2 == 0){
+            alert(`O vencedor é o X`)
+            placarX ++
+        }else{
+            alert(`O vencedor é o O`)
+            placarY ++
+    }
     }
 }
