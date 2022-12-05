@@ -1,6 +1,10 @@
-.nav{
-    background: linear-gradient(135deg, #9e0c36, #20010a);
+.bg1{
+    background: linear-gradient(135deg, #9e0c36, #4e0015);
 }
-.nav-link{
-    color: white;
+.list-group-item.active {
+    background-color: #9e0c36;
+    border-color: #4e0015;
+}
+body{
+    background: linear-gradient(138deg, #e0e0e0, #5f5f5f);
 }
